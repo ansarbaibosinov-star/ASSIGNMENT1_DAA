@@ -8,12 +8,7 @@ import java.util.Random;
 
 public class Benchmark {
 
-    private static final int[] SIZES = {
-            1_000,
-            10_000,
-            100_000,
-            1_000_000
-    };
+    private static final int[] SIZES = { 1_000,  10_000,  100_000,  1_000_000 };
 
     private static final int RUNS = 5;
 
@@ -31,8 +26,7 @@ public class Benchmark {
                 "duplicates"
         };
 
-        try (PrintWriter writer =
-                     new PrintWriter(new FileWriter("results.csv"))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("results.csv"))) {
 
             writer.println(
                     "algorithm,input,n,time_ms,comparisons,max_depth"

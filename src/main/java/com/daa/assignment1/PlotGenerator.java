@@ -38,9 +38,7 @@ public class PlotGenerator {
         }
     }
 
-    // ---------------------------------------------------------
-    // TIME VS N
-    // ---------------------------------------------------------
+
 
     private static void generateTimeChart(String fileName)
             throws IOException {
